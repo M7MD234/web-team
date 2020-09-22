@@ -7,6 +7,7 @@
     <title>Restoration simulator</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="https://kit.fontawesome.com/1cdb50368f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -122,39 +123,73 @@
             </div>
         </section>
         <!--end-section-4-->
-        <!--section-5--->
-        <section class="social">
-            <div class="for-update">
-                <form action="" method="get">
-                    <input type="email" placeholder="Please Enter your Email" class="inputsignup">
-                    <input type="button" value="sign In" class="signup">
-                </form>
+        <section class="posts">
+            <div class="con-title-posts">
+                <h1 class="title-posts">THE POSTS</h1>
             </div>
-            <div class="twitposts horizontal-scroll-wrapper squares">
-                <div>
-                    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/RestorationSim?ref_src=twsrc%5Etfw%22%3ETweets by RestorationSim"></a>
+            <div class="con-posts">
+                <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/RestorationSim?ref_src=twsrc%5Etfw%22%3ETweets by RestorationSim"></a>
+            </div>
+        </section>
+        <!--section-5--->
+        <!--end-section-5-->
+        <!--section-6-->
+        <section class="social">
+            <div class="for-contact">
+                <div class="con-title-for-contact">
+                    <h1 class="title-for-contact">FOR CONTACT,UPDATE</h1>
                 </div>
-                <div>
-                    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/RestorationSim?ref_src=twsrc%5Etfw%22%3ETweets by RestorationSim"></a>
+            </div>
+            <div class="conx5">
+                <div class="for-update">
+                    <form action="" method="get">
+                        <input type="email" placeholder="Please Enter your Email" class="inputsignup">
+                        <input type="button" value="sign In" class="signup">
+                    </form>
                 </div>
-                <div>
-                    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/RestorationSim?ref_src=twsrc%5Etfw%22%3ETweets by RestorationSim"></a>
-                </div>
-                <div>
-                    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/RestorationSim?ref_src=twsrc%5Etfw%22%3ETweets by RestorationSim"></a>
-                </div>
-                <div>
-                    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/RestorationSim?ref_src=twsrc%5Etfw%22%3ETweets by RestorationSim"></a>
-                </div>
-                <div>
-                    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/RestorationSim?ref_src=twsrc%5Etfw%22%3ETweets by RestorationSim"></a>
-                </div>
-                <div>
-                    <a class="twitter-timeline" data-width="400" data-height="500" data-theme="dark" href="https://twitter.com/RestorationSim?ref_src=twsrc%5Etfw%22%3ETweets by RestorationSim"></a>
+                <div class="swiper-container twitposts">
+                    <div class="con-title-socialmedia">
+                        <h1 class="title-socialmedia">socialmedia</h1>
+                    </div>
+                    <div class="swiper-wrapper" style="height:445px;">
+                        <div class="swiper-slide sw" style="width:730px;">
+                            <div class="container-page-us">
+                                <i class="fab fa-facebook-f" style="font-size: 48px;"></i>
+                            </div>
+                            <div class="con-desc-social-2">
+                                <p class="desc-social-2"></p>
+                                <a href="">
+                                    <button class="btn-togo"></button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sw">
+                            <div class="container-page-us">
+                                <i class="fab fa-twitter" style="font-size: 48px;"></i>
+                            </div>
+                            <div class="con-desc-social-2">
+                                <p class="desc-social-2"></p>
+                                <a href="">
+                                    <button class="btn-togo"></button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sw">
+                            <div class="container-page-us">
+                                <i class="fab fa-discord" style="font-size: 48px;"></i>
+                            </div>
+                            <div class="con-desc-social-2">
+                                <p class="desc-social-2"></p>
+                                <a href="">
+                                    <button class="btn-togo"></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <!--end-section-5-->
+        <!--end-section-6-->
         <!--footer-->
         <footer>
             <div class="con-f">
@@ -178,10 +213,17 @@
         </footer>
         <!--end-footer-->
     </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up" style="font-size: 48px;"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper('.swiper-container', {
+            speed: 400,
+            spaceBetween: 100
+        });
+    </script>
 </body>
 
 </html>
